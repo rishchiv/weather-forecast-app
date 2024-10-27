@@ -43,7 +43,7 @@ function WeatherChart({ data }: WeatherChartProps) {
         Temperature Over Time
       </h2>
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={chartData} width={800} height={500}>
+        <LineChart data={chartData} width={800} height={400}>
           <XAxis
             dataKey="date"
             tickFormatter={(date) => dayjs(date).format("D MMM")}
